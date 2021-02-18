@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Basic Area</title>
+
+        <link href="../../assets/styles.css" rel="stylesheet" />
+
+        <style>
+
+            #chart {
+                max-width: 650px;
+                margin: 35px auto;
+            }
+
+        </style>
+
+        <!--    <script>
+              window.Promise ||
+                document.write(
+                  '<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>'
+                );
+              window.Promise ||
+                document.write(
+                  '<script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20171210/classList.min.js"><\/script>'
+                );
+              window.Promise ||
+                document.write(
+                  '<script src="https://cdn.jsdelivr.net/npm/findindex_polyfill_mdn"><\/script>'
+                );
+            </script>-->
+
+
+        <!--    <script src="https://cdn.jsdelivr.net/npm/react@16.12/umd/react.production.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/react-dom@16.12/umd/react-dom.production.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/prop-types@15.7.2/prop-types.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+            <script src="https://cdn.jsdelivr.net/npm/react-apexcharts@1.3.6/dist/react-apexcharts.iife.min.js"></script>
+        -->
+
+
+        <!--    <script src="../../../dist/apexcharts.amd.js"></script>
+            <script src="../../../dist/apexcharts.common.js"></script>
+            <script src="../../../dist/apexcharts.js"></script>
+            <script src="../../../dist/apexcharts.min.js"></script>
+            <script src="../../../dist/apexcharts.esm.js"></script>
+        -->
+        <script src="js/react.production.min.js"></script>
+        <script src="js/16.12_umd_react-dom.production.min.js"></script>
+        <script src="js/15.7.2_prop-types.min.js"></script>
+        <script src="js/5.8.34_browser.min.js"></script>
+        <script src="js/https _cdn.jsdelivr.net_npm_apexcharts.js"></script>
+        <script src="js/react-apexcharts.iife.min.js"></script>
+
+        <script src="../../assets/stock-prices.js"></script>
+    </head>
+
+    <body>
+
+        <div id="app"></div>
+
+        <div id="html">
+            &lt;div id=&quot;chart&quot;&gt;
+            &lt;ReactApexChart options={this.state.options} series={this.state.series} type=&quot;area&quot; height={350} /&gt;
+            &lt;/div&gt;
+        </div>
+
+        <script type="text/babel">
+            class ApexChart extends React.Component {
+                constructor(props) {
+                    super(props);
+
+                    this.state = {
+
+                        series: [{
+                                name: "Users Visit",
+                                data: series.monthDataSeries1.users
+                            }],
+                        options: {
+                            chart: {
+                                type: 'area',
+                                height: 350,
+                                zoom: {
+                                    enabled: false
+                                }
+                            },
+                            dataLabels: {
+                                enabled: false
+                            },
+                            stroke: {
+                                curve: 'straight'
+                            },
+
+                            title: {
+                                text: 'Fundamental Analysis of Users',
+                                align: 'left'
+                            },
+                            subtitle: {
+                                text: 'Users and  Date',
+                                align: 'left'
+                            },
+                            labels: series.monthDataSeries1.dates,
+                            xaxis: {
+                                type: 'datetime',
+                            },
+                            yaxis: {
+                                opposite: true
+//                                opposite: false
+                            },
+                            legend: {
+                                horizontalAlign: 'left'
+                            }
+                        },
+
+                    };
+                }
+
+                render() {
+                    return (
+                        <div>
+                          <div id="chart">
+                            <ReactApexChart options={this.state.options} series={this.state.series} type="area" height={350} />
+                          </div>
+                          <div id="html-dist"></div>
+                        </div>
+                    );
+                }
+            }
+
+            const domContainer = document.querySelector('#app');
+            ReactDOM.render(React.createElement(ApexChart), domContainer);
+        </script>
+
+
+    </body>
+</html>

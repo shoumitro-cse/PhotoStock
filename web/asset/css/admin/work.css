@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 11, 2021, 8:47:18 PM
+    Author     : shoumitro
+*/
+
+.work_table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #d3d3d3;
+}
+
+.work_table th {
+    padding: 10px 0;
+    color: blue;
+    border: 1px solid #d3d3d3;
+}
+
+.work_table td {
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    padding: 20px 0;
+    text-transform: capitalize;
+}
+
+.td_actions {
+    
+}
+.td_actions a {
+    /*display: block;*/
+    width: 100%;
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/*work show*/
+.work_show_content {
+    width: 100%;
+    padding: 5px;
+}
+
+.des_name {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    margin-bottom: 1rem;
+    background-color: forestgreen;
+    color: #fff;
+    font-size: 150%;
+    text-transform: capitalize;
+}
+.img_content {
+    display: inline-block;
+    /*padding: .1%;*/
+}
+.view_img {
+    border: 1px solid #d3d3d3;
+    padding: 5px;
+    display: inline-block;
+}
+.view_img img {
+    width: 100%;
+}
+.view_img p {
+    margin-top: 5px;
+}
+.add_img_btn {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #d3d3d3;
+    background-color: #00bf00;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+.add_img_btn a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 100%;
+}
+.footer-content .add_img_btn {
+    background-color: #000;
+}

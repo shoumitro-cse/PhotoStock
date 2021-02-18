@@ -1,0 +1,261 @@
+
+
+/*for order*/
+.order {
+}
+
+
+/*order head*/
+.my-order {
+    background-color: #ffffff;
+    padding: 20px;
+    /*box-shadow: 0 4px 6px -3px #9c9c9c;*/
+}
+
+.my-order-heading {
+    border-bottom: 1px solid #d3d3d3;
+}
+.my-order-heading h1 {
+    margin-top:  0;
+    margin-bottom: 14px;
+    font-size: 20px;
+}
+.my-order-heading p {
+    /*margin: 0;*/
+    font-size: 15px;
+    font-weight: 400;
+}
+.my-order-heading-sort {
+    padding: 1rem .5rem 0;
+}
+.or-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.or-col-4 {
+    flex-basis: 28%;
+}
+.or-col-2 {
+    flex-basis: 44%;
+}
+.or-col-25 {
+    flex-basis: 25%;
+}
+.orId-input, .or-submit {
+    padding: .6rem 1rem;
+    border: 1px solid #d3d3d3;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    /*box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);*/
+}
+.or-submit {
+    cursor: pointer;
+    background-color: orange;
+    color: #ffffff;
+    font-weight: 480;
+    font-size: 1rem;
+}
+.custom-select {
+    display: inline-block;
+    /*width: 100%;*/
+    height: -webkit-calc(2.25rem + 2px);
+    height: calc(2.25rem + 2px);
+    padding: .375rem 1.75rem .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    background: #fff url(../images/web_icon/custom_select.svg) no-repeat right .75rem center;
+    background-size: 8px 10px;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/*order card*/
+.my-order-card {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 0rem 1rem 1rem;
+    /*box-shadow: 0 4px 6px -3px #9c9c9c;*/ 
+}
+.my-order-card-wrapper {
+    border-bottom: 1px solid #d3d3d3;
+    padding: 1rem 0 3rem;
+}
+.my-order-card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    /*border: 1px solid #d3d3d3;*/
+    padding:  .5rem 1rem;
+}
+.my-order-card-meta h1 {
+    margin: 0;
+    padding-top: .7rem;
+    font-size: 18px;
+}
+.my-order-card-meta h1 em {
+    color: #33c24d;
+}
+.or-btn {
+    margin-left: 1rem;
+    text-decoration: none;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    font-weight: bold;
+    font-weight: 500;
+}
+.my-order-card-meta a {
+    display: block;
+    padding: .6rem 1rem;
+    background-color: orange;
+    color: #ffffff;  
+    font-weight: bold;
+}
+
+.status {
+    margin: 1rem 0;
+}
+.status span {
+    padding: .5rem 1rem;
+    border-color: green;
+    color: green;
+}
+.status a {
+    padding: .5rem 1rem;
+    background-color: #0397d3;
+    color: white; 
+}
+.my-order-card-content {
+    margin-top: 2rem;
+}
+.or-item {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    border: 1px solid #d3d3d3;
+    margin: 0 .3rem .5rem;
+    color: black;
+    transition: all .3s;
+}
+.or-item:hover {
+    /*background-color: #fafafa;*/
+    box-shadow: 1px 1px 6px 0 rgba(0,0,0,.2);
+}
+.or-item figure {
+    margin: 0;
+    padding: .1rem;
+}
+.or-item figure img {
+    width: 100%;
+    height: 150px;
+}
+.or-img-title {
+    font-size: 17px;
+    color: gray;
+    margin-top: 0px;
+    margin-bottom: .8rem;
+}
+.or-img-title::first-letter {
+    text-transform: capitalize;
+}
+.or-price {
+    font-weight: bold;
+    font-size: 14px;
+}
+.or-price span {
+    float: right;
+    color: orange;
+    margin-top: .1rem;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 850px) {
+    .sm-100 {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        text-align: left;
+    }    
+    .or-mb-col-50 {
+        flex-basis: 50%;
+    }
+    .my-order-heading-sort .or-row .custom-select {
+        margin-left: 1rem;
+        width: 68%;
+    }
+    .or-submit {
+        padding: .4rem .5rem;
+        margin-left: 20%;
+    }
+
+    .my-order-card-meta a {
+        margin-left: 0;
+        margin-top: .7rem;
+        padding: .5rem .6rem;
+    }
+    .my-order-card-meta h1 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    .content-section {
+        margin: 50px 5px 50px 5px;
+    }
+    .my-order-card-wrapper {
+        padding: 0rem 0 1.3rem;
+    }
+    .my-order {
+        box-shadow: none; 
+    }
+    .my-order-heading-sort {
+        padding: 1rem .5rem 0;
+    }
+    .orId-input{
+        padding: .4rem .5rem;
+        width: 60%;
+    }
+    .my-order-heading-sort .or-row .custom-select {
+        margin-left: 0;
+        width: 68%;
+    }
+    .or-submit {
+        padding: .4rem .5rem;
+        margin-left: 25%;
+    }
+    .my-order {
+        padding: 1rem .5rem .5rem;
+    }
+
+    .my-order-card {
+        margin-top: 10px;
+        padding: 0rem .3rem 1rem;
+    }
+    .or-btn {
+        margin-left: 0;
+    }
+    .or-item figure img {
+        width: 100%;
+        height: 80px;
+    }
+    .or-item {
+        padding: .4rem;
+    }
+    .or-price span {
+        float: none;
+        margin-left: .2rem;
+        font-size: 10px;
+    }
+
+
+}

@@ -1,0 +1,297 @@
+.invalid_user {
+    color: red;
+    margin: 0;
+}
+/* The Modal (background) */
+.modal {
+    display: none; 
+    /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    padding-top: 1.5%;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 0px auto 15% auto; 
+    border: 1px solid #888;
+    animation: zoom_in 1.5s ease-out;
+    width: 30%; 
+    background-color: #ffffff;
+    margin: 0px auto;
+    padding: 15px 20px;
+    border-radius: 3px;
+    box-shadow: 3px 3px 37px 19px rgba(0,0,0,0.1),-3px 3px 37px 19px rgba(0,0,0,0.1);
+}
+@keyframes zoom_in {
+    from {transform: scale(0);opacity:0;} 
+    to {transform: scale(1);opacity:1}
+}
+@keyframes zoom_out {
+    from {transform: scale(1);opacity:1;}
+    to {transform: scale(0);opacity:0;} 
+}
+
+
+/*for image content*/
+#regForm>.img-content {
+    text-align: center;
+    position: relative;
+}
+
+#regForm>.img-content>span {
+    margin-bottom: 10px;
+}
+#regForm>.img-content>span.fa {
+    font-size: 150px;
+    color: cadetblue;
+}
+/*#regForm>.img-content>img.avatar {
+    width: 30%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}*/
+/* The Close Button (x) */
+#regForm>.img-content>span.close {
+    position: absolute;
+    right: 2px;
+    top: 0;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#regForm>.img-content>span.close:hover,
+#regForm>.img-content>span.close:focus {
+    color: orange;
+    cursor: pointer;
+}
+
+
+/*for form body conent*/
+#regForm>.form-body-content> h2 {
+    text-align: center;  
+}
+#regForm>.form-body-content>.tab {
+    display: none;/* Hide all tabs by default: */
+}
+#regForm>.form-body-content>.tab>span, #regForm>.form-body-content>.login>span{
+    color: darkcyan;
+    font-size: 22px;
+    margin-left: 28%;
+}
+/*#regForm>.form-body-content>.tab>p> input, #regForm>.form-body-content>.login>p> input  {
+    padding: 10px 7px 10px 20px;
+    width: 100%;
+    border: 2px solid aliceblue;
+    border-radius: 10px;
+    border-color: antiquewhite;
+}*/
+#regForm>.form-body-content>.tab>p> input, #regForm>.form-body-content>.login>p> input  {
+    width: 100%;
+    padding: 10px 7px 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+#regForm>.form-body-content>.tab>p> input.input-col-2 {
+    width: 49%; 
+    display: inline;
+}
+#regForm>.form-body-content>.tab>p> input.checkbox-btn{
+    width: 3%; 
+    display: inline;
+    vertical-align: -3px;;
+}
+#regForm>.form-body-content>.tab>p>span, #regForm>.form-body-content>.login>p>span{
+    color: burlywood;
+}
+#regForm>.form-body-content>.tab>p> input:focus, #regForm>.form-body-content>.login>p> input:focus {
+    color: #495057;
+    background-color: #ffffff;
+    border-color: cornsilk;
+    outline: 0;
+    box-shadow: 0 0 .1rem .1rem rgba(0,123,255,.25);
+
+
+}
+
+#regForm>.form-body-content>.tab>p> input.invalid, #regForm>.form-body-content>.login>p> input.invalid {
+    background-color: #ffdddd;
+}
+
+/*for previous and next button*/
+#regForm>.form-body-content>.form-body-page {
+    display:flex;
+    overflow: hidden;
+}
+#regForm>.form-body-content>.form-body-page> input {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+#regForm>.form-body-content>.form-body-page> input:hover {
+    opacity: 0.5;
+}
+#regForm>.form-body-content>.form-body-page>#prevBtn {
+    background-color: burlywood;
+}
+#regForm>.form-body-content>.form-body-page>#nextBtn {
+    display: none;
+}
+#regForm>.form-body-content>.form-body-page>#short-signin {
+    margin-bottom: 90px;
+}
+
+/*for circles indicate  */
+#regForm>.form-body-content>.circle {
+    text-align: center;
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+#regForm>.form-body-content>.circle>.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: darkkhaki;
+    border: none;  
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+#regForm>.form-body-content>.circle>.step.active {
+    opacity: 1;
+    background-color: darkcyan;
+}
+
+#regForm>.form-body-content>.circle>.step.finish {
+    background-color: green; 
+    /*box-shadow: 4px 4px .5px 0 rgba(0,0,0,.2), -4px -4px .5px 0 rgba(0,0,0,.2), -4px 4px .5px 0 rgba(0,0,0,.2), 4px -4px .5px 0 rgba(0,0,0,.2);*/
+}
+
+/*for footer content*/
+#regForm>.footer-content {
+    background-color:#f1f1f1;
+}
+#regForm>.footer-content>.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: bisque;
+    cursor: pointer;
+    border: 1px solid #ffdddd;
+    opacity: 1;
+}
+#regForm>.footer-content>.cancelbtn:hover {
+    opacity: .8;
+}
+#regForm>.footer-content>span {
+    float:right;
+    margin-top:10px;  
+    margin-right: 4px;
+    font-style: italic;
+    font-size: 16px;
+    /*opacity: .6;*/
+}
+
+#singup_label, #signin_label {
+    margin-left: 40%;
+    /*text-decoration: underline;*/
+    color: #00a7e5;
+    cursor: pointer;
+    font-weight: bold;
+}
+#regForm>.footer-content>span#signin_label {
+    opacity: 1;
+    color: blueviolet;
+    font-style: italic;
+}
+
+#regForm > .form-body-content > .tab > .md-reg-label {
+    margin-left: 35%;
+}
+#regForm > .form-body-content > .login > .md-log-label {
+    margin-left: 35%;
+}
+#regForm > .form-body-content > .tab > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 850px) {
+    .modal-content{   
+        width: 70%;
+    }
+    #regForm > .form-body-content > .tab > span {
+        margin-left: 26%;
+    }
+    #regForm > .img-content > span {
+        margin-bottom: 0px;
+    }
+    #regForm > .form-body-content > .tab > .md-reg-label {
+        margin-left: 35%;
+    }
+    #regForm > .form-body-content > .login > .md-log-label {
+        margin-left: 35%;
+    }
+    #regForm > .form-body-content > .tab > p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 350px) {
+    .modal-content{   
+        width: 90%;
+        padding: 10px;
+    }
+    #regForm>.img-content>span {
+        margin-bottom: 5px;
+    }
+    #regForm>.img-content>span.fa {
+        font-size: 80px;
+    }
+    #regForm>.img-content>span.close.fa {
+        font-size: 20px;
+    }
+    #regForm>.form-body-content>.tab>span{
+        margin-left: 10%;
+    }
+    #regForm > .form-body-content > .circle {
+        margin-top: 10px;
+    }
+    #regForm > .form-body-content > .tab > p > input, #regForm > .form-body-content > .login > p > input {
+        padding-left: 10px;
+        font-size: 10px;
+    }
+    #regForm > .form-body-content > .tab > p > input:focus, #regForm > .form-body-content > .login > p > input:focus {
+        font-size: 11px;
+    }
+    #regForm > .form-body-content > .tab > p > span, #regForm > .form-body-content > .login > p > span {
+        font-size: 13px;
+
+    }
+    #regForm > .form-body-content > .tab > .md-reg-label {
+        margin-left: 25%;
+    }
+    #regForm > .form-body-content > .login > .md-log-label {
+        margin-left: 27%;
+    }
+    #regForm > .form-body-content > .tab > p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #regForm > .form-body-content > .form-body-page > #short-signin {
+        margin-bottom: 10%;
+    }
+
+
+}

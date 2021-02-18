@@ -1,0 +1,134 @@
+body {
+    background-color: #f1f2f4;
+}
+.shopping-bill {
+    margin: 3rem 8rem;
+}
+.sp-row * {
+    box-sizing: border-box;
+}
+
+.sp-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+}
+
+.sp-col-30 {
+    flex: 30%;
+}
+
+.sp-col-50 {
+    flex: 50%;
+}
+
+.sp-col-70 {
+    flex: 70%;
+}
+
+.sp-col-30,
+.sp-col-50,
+.sp-col-70 {
+    padding: 0 16px;
+}
+
+.sp-container {
+    background-color: #ffffff;
+    padding: 5px 20px 15px 20px;
+    border-radius: 3px;
+}
+
+.fixed-checkout {
+    /*box-shadow: 0 4px 6px -3px #9c9c9c;*/
+    box-shadow: none;
+}
+.fixed-container {
+    position: sticky;
+    top: 10px;
+    box-shadow: 0 4px 6px -3px #9c9c9c;
+}
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+.sp-container .fa {
+    color: gray;
+    
+}
+input[type=text], input[type=email] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+input[type=text]:focus, input[type=email]:focus {
+    color: #495057;
+    background-color: #ffffff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 .1rem .1rem rgba(0,123,255,.25);
+}
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+.sp-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.sp-btn:hover {
+    background-color: #45a049;
+}
+.sp-btn:active {
+    opacity: .5;
+}
+
+
+.payment-breakdown {
+    margin-top: 0px;
+    border-bottom: none;
+}
+.payment-breakdown h3 {
+    color: gray;
+    font-size: 95%;
+    font-weight: 500;
+    margin: 0 0 10px;;
+}
+@media (max-width: 850px) {
+    .floating-button {
+        display: none;
+    }
+    .sp-row {
+        /*flex-direction: column-reverse;*/
+    }
+    .sp-col-30 {
+        margin-bottom: 20px;
+    }
+    .shopping-bill {
+        margin: 3rem 2rem;
+    }
+}
+@media (max-width: 450px) {
+    .sp-row {
+        flex-direction: column-reverse;
+    }
+    .sp-col-30 {
+        margin-bottom: 20px;
+    }
+    .shopping-bill {
+        margin: 2rem 1rem;
+    }
+    .check-sidebar-pd-0 {
+        padding: 0;
+    }
+}

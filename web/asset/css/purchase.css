@@ -1,0 +1,128 @@
+#account-mobile-menu {
+    display: none;
+}
+.purchase-content {
+    margin: 50px 20px 0px 110px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.purchase-item {
+    width: 20%;
+
+}
+.item-content {
+    color: black;
+    /*border-radius: 3px;*/
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffffff;
+    transition: all .5s;
+   
+}
+.item-link {
+    text-align: center;
+}
+.link-content {
+    text-align: center;
+}
+.item-content:hover {
+    box-shadow: 4px 4px 20px 0px rgba(0,0,0,0.3);
+
+}
+
+.item-body img {
+    width: 100%;
+    height: 200px;
+}
+.item-body h1, .item-body p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.item-body .heading {
+    font-size: 110%;
+    font-weight: 500;
+}
+.item-body .heading::first-letter {
+    text-transform: capitalize;
+}
+.item-body .price-option {
+    display:  flex;
+    flex-wrap: wrap;
+}
+.item-body .price-option .discount-price {
+    flex-basis: 33.33%;
+}
+.item-body .price-option .regular-price {
+    flex-basis: 33.33%;
+    color: gray;
+
+}
+.item-body .price-option .percent {
+    flex-basis: 33.33%;
+    color: orange;
+    text-align: right;
+
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .purchase-item {
+        width: 25%;
+
+    }
+}
+@media only screen and (max-width: 850px) {
+    .floating-button {
+        display: none;
+    }
+    .purchase-content {
+        margin: 50px 10px 50px 10px;
+    }
+    .purchase-item {
+        width: 33.33%;
+
+    }
+    .item-body img {
+        height: 150px;
+    }
+}
+@media only screen and (max-width: 450px) {
+
+    .purchase-item {
+        width: 50%;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .purchase-content {
+        margin: 50px 5px 50px 5px;
+    }
+    .purchase-item {
+        width: 50%;
+
+    }
+
+    .item-body img {
+        height: 100px;
+    }
+    .item-content {
+        padding: 10px;
+        margin: 3px;
+    }
+    .item-body .heading {
+        font-size: 90%;
+    }
+    .item-body .price-option {
+        font-size: 90%;
+    }
+    .item-body h1, .item-body p {
+        margin-bottom: 3px;
+        margin-top: 3px;
+    }
+    .item-link {
+        font-size: 96%;
+    }
+}
+
+footer {
+    margin-top: 200px;
+}
